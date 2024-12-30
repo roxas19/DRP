@@ -1,13 +1,13 @@
 from django.core.management.base import BaseCommand
 from courses.models import Course
-from categories.models import Category
+from organisations.models import Category
 from users.models import Instructor
 
 class Command(BaseCommand):
     help = 'Add sample courses data'
 
     def handle(self, *args, **kwargs):
-        # Fetch categories by name
+        # Fetch organisations by name
         try:
             tamil_basics_category = Category.objects.get(name="Tamil Basics")
             culinary_arts_category = Category.objects.get(name="Culinary Arts")

@@ -1,7 +1,7 @@
 # courses/management/commands/seed_courses.py
 from django.core.management.base import BaseCommand
 from courses.models import Course, Week
-from categories.models import Category
+from organisations.models import Category
 from users.models import Instructor, User  # Import User model
 
 class Command(BaseCommand):
